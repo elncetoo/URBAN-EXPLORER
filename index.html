@@ -16,10 +16,10 @@
     <body>
     
         <div data-role="page" id="home">
-            <div data-role="panel" data-display="push" id="myPanel" data-theme="b" data-swipe-close="false">
+            <div data-role="panel" id="overlayPanel" data-display="overlay" data-theme="b">
                   <ul data-role="listview">
                     <li data-role="list-divider">MENU</li>
-                    	<li><a href="#food" data-transition="slide">Food</a></li>
+						<li><a href="#food" data-transition="slide">Food</a></li>
                         <li><a href="#art" data-transition="slide">Art</a></li>
                         <li><a href="#nlife" data-transition="slide">Nightlife</a></li>
                         <li><a href="#social" data-transition="slide">Social</a></li>
@@ -31,7 +31,7 @@
            
             
           <div data-role="header" data-theme="b" data-position="fixed">
-               <a href="#myPanel" data-transition="slide" class="ui-btn ui-corner-all ui-icon-bars ui-shadow-icon ui-btn-icon-notext">Menu</a>
+               <a href="#overlayPanel" data-transition="slide" class="ui-btn ui-corner-all ui-icon-bars ui-shadow-icon ui-btn-icon-notext">Menu</a>
                 <h1>URBAN EXPLORER</h1>
                 <a href="#home" data-transition="slide" data-role="button" data-icon="myiconh" data-iconpos="notext">www</a>
    		  </div>
@@ -43,23 +43,23 @@
                </div>
                               
                 <ul data-role="listview" data-inset="true" data-theme="b">
-                    <li><a href="#food" data-transition="slide"><img src="img/food.jpg">
+                    <li><a href="#food" data-transition="slide"><img src="img/food.jpg" alt="food">
                         <h2>FOOD</h2>
                         <p>The good food mood..</p></a>
                     </li>
-                    <li><a href="#art" data-transition="slide"><img src="img/art.jpg">
+                    <li><a href="#art" data-transition="slide"><img src="img/art.jpg" alt="art">
                         <h2>ART</h2>
                         <p>The art of the streets.</p></a>
                     </li>
-                    <li><a href="#nlife" data-transition="slide"><img src="img/life.jpg">
+                    <li><a href="#nlife" data-transition="slide"><img src="img/life.jpg" alt="nightlife">
                         <h2>NIGHTLIFE</h2>
                         <p>Alternative Adventurer..</p></a>
                     </li>
-                    <li><a href="#social" data-transition="slide"><img src="img/social.jpg">
+                    <li><a href="#social" data-transition="slide"><img src="img/social.jpg" alt="social">
                         <h2>SOCIAL</h2>
                         <p>Free Events and other cool sfaff you can do around here.. </p></a>
                     </li>
-                    <li><a href="#vintage" data-transition="slide"><img src="img/vintage.jpg">
+                    <li><a href="#vintage" data-transition="slide"><img src="img/vintage.jpg" alt="vintage">
                         <h2>VINTAGE</h2>
                         <p>Old Copenhagen - photos from the dusty past..</p></a>
                     </li>
@@ -80,8 +80,8 @@
             
              
            <div data-role="page" id="food">
-            <div data-role="panel" data-display="push" id="myPanel" data-theme="b" data-swipe-close="false">
-                <ul data-role="listview">
+           <div data-role="panel" id="overlayPanel1" data-display="overlay" data-theme="b">
+                  <ul data-role="listview">
                     <li data-role="list-divider">MENU</li>
                     	<li><a href="#home" data-transition="slide">Home</a></li>
                     	<li><a href="#food" data-transition="slide">Food</a></li>
@@ -95,7 +95,7 @@
             </div><!-- /panel -->
                        
           <div data-role="header" data-theme="b" data-position="fixed">
-               <a href="#myPanel" data-transition="slide" class="ui-btn ui-corner-all ui-icon-bars ui-shadow-icon ui-btn-icon-notext">Menu</a>
+               <a href="#overlayPanel1" data-transition="slide" class="ui-btn ui-corner-all ui-icon-bars ui-shadow-icon ui-btn-icon-notext">Menu</a>
                 <h1>URBAN EXPLORER</h1>
                 <a href="#home" data-transition="slide" data-role="button" data-icon="myiconh" data-iconpos="notext">www</a>
    		  </div>
@@ -121,7 +121,7 @@
            
            
              <div data-role="page" id="art">
-            <div data-role="panel" data-display="push" id="myPanel" data-theme="b" data-swipe-close="false">
+            <div data-role="panel" id="overlayPanel2" data-display="overlay" data-theme="b">
                 <ul data-role="listview">
                     <li data-role="list-divider">MENU</li>
                     	<li><a href="#home" data-transition="slide">Home</a></li>
@@ -136,7 +136,7 @@
             </div><!-- /panel -->
                        
           <div data-role="header" data-theme="b" data-position="fixed">
-               <a href="#myPanel" data-transition="slide" class="ui-btn ui-corner-all ui-icon-bars ui-shadow-icon ui-btn-icon-notext">Menu</a>
+               <a href="#overlayPanel2" data-transition="slide" class="ui-btn ui-corner-all ui-icon-bars ui-shadow-icon ui-btn-icon-notext">Menu</a>
                 <h1>URBAN EXPLORER</h1>
                 <a href="#home" data-transition="slide" data-role="button" data-icon="myiconh" data-iconpos="notext">www</a>
    		  </div>
@@ -163,7 +163,7 @@
           
            
            <div data-role="page" id="nlife">
-            <div data-role="panel" data-display="push" id="myPanel" data-theme="b" data-swipe-close="false">
+            <div data-role="panel" id="overlayPanel3" data-display="overlay" data-theme="b">
                 <ul data-role="listview">
                     <li><a href="#home" data-transition="slide">Home</a></li>
                     	<li><a href="#food" data-transition="slide">Food</a></li>
@@ -177,7 +177,7 @@
             </div><!-- /panel -->
                        
           <div data-role="header" data-theme="b" data-position="fixed">
-               <a href="#myPanel" data-transition="slide" class="ui-btn ui-corner-all ui-icon-bars ui-shadow-icon ui-btn-icon-notext">Menu</a>
+               <a href="#3" data-transition="slide" class="ui-btn ui-corner-all ui-icon-bars ui-shadow-icon ui-btn-icon-notext">Menu</a>
                 <h1>URBAN EXPLORER</h1>
                 <a href="#home" data-transition="slide" data-role="button" data-icon="myiconh" data-iconpos="notext">www</a>
    		  </div>
@@ -202,7 +202,7 @@
            </div><!--end page four-->
            
            <div data-role="page" id="social">
-            <div data-role="panel" data-display="push" id="myPanel" data-theme="b" data-swipe-close="false">
+            <div data-role="panel" id="overlayPanel4" data-display="overlay" data-theme="b">
                 <ul data-role="listview">
                     <li data-role="list-divider">MENU</li>
                     	<li><a href="#home" data-transition="slide">Home</a></li>
@@ -217,7 +217,7 @@
             </div><!-- /panel -->
                        
           <div data-role="header" data-theme="b" data-position="fixed">
-               <a href="#myPanel" data-transition="slide" class="ui-btn ui-corner-all ui-icon-bars ui-shadow-icon ui-btn-icon-notext">Menu</a>
+               <a href="#overlayPanel4" data-transition="slide" class="ui-btn ui-corner-all ui-icon-bars ui-shadow-icon ui-btn-icon-notext">Menu</a>
                 <h1>URBAN EXPLORER</h1>
                 <a href="#home" data-transition="slide" data-role="button" data-icon="myiconh" data-iconpos="notext">www</a>
    		  </div>
@@ -242,7 +242,7 @@
            </div><!--end page five-->
            
            <div data-role="page" id="vintage">
-            <div data-role="panel" data-display="push" id="myPanel" data-theme="b" data-swipe-close="false">
+            <div data-role="panel" id="overlayPanel5" data-display="overlay" data-theme="b">
                 <ul data-role="listview">
                     <li data-role="list-divider">MENU</li>
                     	<li><a href="#home" data-transition="slide">Home</a></li>
@@ -257,7 +257,7 @@
             </div><!-- /panel -->
                        
           <div data-role="header" data-theme="b" data-position="fixed">
-               <a href="#myPanel" data-transition="slide" class="ui-btn ui-corner-all ui-icon-bars ui-shadow-icon ui-btn-icon-notext">Menu</a>
+               <a href="#overlayPanel5" data-transition="slide" class="ui-btn ui-corner-all ui-icon-bars ui-shadow-icon ui-btn-icon-notext">Menu</a>
                 <h1>URBAN EXPLORER</h1>
                 <a href="#home" data-transition="slide" data-role="button" data-icon="myiconh" data-iconpos="notext">www</a>
    		  </div>

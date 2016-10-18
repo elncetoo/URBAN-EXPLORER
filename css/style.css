@@ -1,0 +1,19 @@
+.ui-icon-myiconwp:after {
+	background-image: url(../img/wp.png);
+	background-size: 30px 30px;
+}
+
+.ui-icon-myiconfb:after {
+	background-image: url(../img/fb.png);
+	background-size: 30px 30px;
+}
+
+.ui-icon-myiconin:after {
+	background-image: url(../img/in.png);
+	background-size: 30px 30px;
+}
+
+.ui-icon-myicong:after {
+	background-image: url(../img/g.png);
+	background-size: 30px 30px;
+}

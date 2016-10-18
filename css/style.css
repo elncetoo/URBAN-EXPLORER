@@ -1,5 +1,5 @@
-.ui-icon-myiconwp:after {
-	background-image: url(../img/wp.png);
+.ui-icon-myiconh:after {
+	background-image: url(../img/home.png);
 	background-size: 30px 30px;
 }
 
@@ -15,5 +15,10 @@
 
 .ui-icon-myicong:after {
 	background-image: url(../img/g.png);
+	background-size: 30px 30px;
+}
+
+.ui-icon-myiconwp:after {
+	background-image: url(../img/wp.png);
 	background-size: 30px 30px;
 }

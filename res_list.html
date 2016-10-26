@@ -1,0 +1,209 @@
+<!doctype html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <title>UE App</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+          
+		   <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+           <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+           <link rel="stylesheet" href="css/style.css">
+           <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+                
+    </head>
+
+    <body>
+    
+         <div data-role="page" id="art_sub">
+           <div data-role="panel" id="overlayPanel6" data-display="overlay" data-theme="b" data-position-fixed="true">
+                  <ul data-role="listview">
+                    <li data-role="list-divider">MENU</li>
+                    	<li><a href="#home" data-transition="slide">Home</a></li>
+                        <li><a href="#food" data-transition="slide">Food</a></li>
+                        <li><a href="#art" data-transition="slide">Art</a></li>
+                        <li><a href="#nlife" data-transition="slide">Nightlife</a></li>
+                        <li><a href="#social" data-transition="slide">Social</a></li>
+                        <li><a href="#vintage" data-transition="slide">Vintage</a></li>
+                        <li data-role="list-divider"></li>
+                     <li data-icon="delete" data-rel="close"><a href="#" data-transition="slide">CLOSE</a></li>
+                 </ul><!-- panel content ends here -->
+            </div><!-- /panel -->
+                       
+          <div data-role="header" data-theme="b" data-position="fixed">
+               <a href="#overlayPanel6" data-transition="slide" class="ui-btn ui-corner-all ui-icon-bars ui-shadow-icon ui-btn-icon-notext">Menu</a>
+                <h1>URBAN EXPLORER</h1>
+                <a href="#home" data-transition="slide" data-role="button" data-icon="myiconh" data-iconpos="notext">home</a>
+   		  </div>
+          
+              <div data-role="main" class="ui-content">
+                 <div class="choice_list">
+ 					<div><img src="img/ggg.jpg" alt="grrf photo" style="width:100%"/></div>
+                    <h1> What do you wanna see? </h1>
+                     
+                    <ul data-role="listview" data-inset="true" data-filter="true" >
+                     
+                    <li><a href="#graffiti" data-transition="slide"> Graffiti culture <span class="ui-li-count"> 6 </span></a> </li>
+                    <li><a href="#streetart" data-transition="slide"> Street & art <span class="ui-li-count" > 3 </span></a> </li>
+                    <li><a href="#galleries" data-transition="slide"> Galleries & art <span class="ui-li-count"> 1 </span></a> </li>
+                                        
+                    </ul>
+                   </div>
+                 </div><!--end content-->
+                  <div data-role="footer" data-theme="b" data-position="fixed">
+                    <div align="center" style="padding: 1%;">
+                    <a href="index.html" data-role="button" data-icon="myiconwp" data-iconpos="notext">www</a>
+                    <a href="index.html" data-role="button" data-icon="myiconfb" data-iconpos="notext">fb</a>
+                    <a href="index.html" data-role="button" data-icon="myiconin" data-iconpos="notext">in</a>
+                    <a href="index.html" data-role="button" data-icon="myicong" data-iconpos="notext">g</a>
+                    <p align="center">&copy; 2016 <a style="text-decoration:none;" href="http://www.cphbusiness.dk/" target="new">CPH Business</a>. All rights reserved.</p>
+                  </div>
+                </div>
+           </div><!--end page art-sub-->
+           
+           
+           <div data-role="page" id="graffiti" data-add-back-btn="true">
+           		<div data-role="panel" id="overlayPanel7" data-display="overlay" data-theme="b" data-position-fixed="true">
+                  <ul data-role="listview">
+                    <li data-role="list-divider">MENU</li>
+                    	<li><a href="#home" data-transition="slide">Home</a></li>
+                        <li><a href="#food" data-transition="slide">Food</a></li>
+                        <li><a href="#art" data-transition="slide">Art</a></li>
+                        <li><a href="#nlife" data-transition="slide">Nightlife</a></li>
+                        <li><a href="#social" data-transition="slide">Social</a></li>
+                        <li><a href="#vintage" data-transition="slide">Vintage</a></li>
+                        <li data-role="list-divider"></li>
+                     <li data-icon="delete" data-rel="close"><a href="#" data-transition="slide">CLOSE</a></li>
+                 </ul><!-- panel content ends here -->
+            </div><!-- /panel -->
+            
+             <div data-role="header" data-theme="b" data-position="fixed">
+                <a href="#overlayPanel7" data-transition="slide" class="ui-btn ui-corner-all ui-icon-bars ui-shadow-icon ui-btn-icon-notext">Menu</a>
+                <h1>GRAFFITI CULTURE</h1>
+                <a href="#home" data-transition="slide" data-role="button" data-icon="myiconh" data-iconpos="notext">home</a>
+   		     </div>
+               
+                <div data-role="content">
+                <div><img src="img/grrf.jpg" alt="grrf photo" style="width:100%"/></div>
+                   <div class="choice_list">
+                   <h1> Pick a spot..</h1>
+                    <ul data-role="listview" data-inset="true" >
+                     <li><a href="#g1" data-transition="slide"> <img src="img/gr1.jpg"/> <h2> The Space man </h2> </a></li>
+                     <li><a href="#g2" data-transition="slide"> <img src="img/gr2.jpg"/> <h2> The Space woman </h2></a></li>
+                     <li><a href="#g3" data-transition="slide"> <img src="img/gr3.jpg"/> <h2> Butterfly </h2></a></li>
+                     <li><a href="#g4" data-transition="slide"> <img src="img/gr4.jpg"/> <h2> WTF?! </h2></a></li>
+                     <li><a href="#g5" data-transition="slide"> <img src="img/gr5.jpg"/> <h2> The Fairy house </h2></a></li>
+                     <li><a href="#g5" data-transition="slide"> <img src="img/gr6.jpg"/> <h2> Christiania </h2></a></li>
+                    </ul>
+                    </div>
+                   </div>
+                   <div data-role="footer" data-theme="b" data-position="fixed">
+                    <div align="center" style="padding: 1%;">
+                    <a href="index.html" data-role="button" data-icon="myiconwp" data-iconpos="notext">www</a>
+                    <a href="index.html" data-role="button" data-icon="myiconfb" data-iconpos="notext">fb</a>
+                    <a href="index.html" data-role="button" data-icon="myiconin" data-iconpos="notext">in</a>
+                    <a href="index.html" data-role="button" data-icon="myicong" data-iconpos="notext">g</a>
+                    <p align="center">&copy; 2016 <a style="text-decoration:none;" href="http://www.cphbusiness.dk/" target="new">CPH Business</a>. All rights reserved.</p>
+                  </div>
+              </div>
+                  </div><!-- /page -->
+               
+              
+            <div id="g1" data-role="page" data-add-back-btn="true">
+               <div data-role="header">
+               <h1> Gr #1</h1>
+               </div>
+                <div data-role="content">
+                   <div class="ui-grid-a" id="restau_infos">	
+                    <div class="ui-block-a">
+                    <h1> NOMA</h1>
+                    <p><strong>  Restaurant bar in the center of Copenhagen</strong></p>
+                    <p> On the menu: </p>
+                        <ul> 
+                            <li> Milkshake with chocolate</li>
+                            <li> Planchettes </li>
+                            <li> Leek pie </li>
+                        </ul>			
+                    </div>		
+                    <div class="ui-block-b">
+                    <p><img src="img/noma.jpg" alt="noma photo"/></p>
+                    <p><a href="http://www.noma.dk" rel="external" data-role="button"> See our website</a></p>
+                    </div>
+                </div><!-- /grid-a -->
+                <hr/>
+                
+                <div class="ui-grid-a" id="contact_infos">	
+                    <div class="ui-block-a">
+                    <h2>Address:</h2>
+                    <p>Strandgade 93</p>
+                    <p>DK-1401 Copenhagen K</p>		
+                    </div>		
+                    <div class="ui-block-b">
+                    <img src="img/map-noma.jpg" alt="plan jeanette"/>
+                    </div>
+                </div><!-- /grid-a -->
+                <div id="contact_buttons">	
+                    <a href="https://www.google.dk/maps/place/Noma/@55.677657,12.595932,513m/data=!3m1!1e3!4m5!3m4!1s0x4652533b679080a5:0x42eaecc5eb37e114!8m2!3d55.6779!4d12.5963?hl=da" data-role="button" data-icon="maps"> Find us on Google Maps </a> 	
+                    <a href="tel:0388161072"  data-role="button" data-icon="tel"> Make Reservation </a>	
+                </div>
+                   
+                   </div>
+                  </div><!-- /page -->
+               <div data-role="footer" data-theme="b" data-position="fixed">
+                <div align="center" style="padding: 1%;">
+                <a href="index.html" data-role="button" data-icon="myiconwp" data-iconpos="notext">www</a>
+                <a href="index.html" data-role="button" data-icon="myiconfb" data-iconpos="notext">fb</a>
+                <a href="index.html" data-role="button" data-icon="myiconin" data-iconpos="notext">in</a>
+				<a href="index.html" data-role="button" data-icon="myicong" data-iconpos="notext">g</a>
+                <p align="center">&copy; 2016 <a style="text-decoration:none;" href="http://www.cphbusiness.dk/" target="new">CPH Business</a>. All rights reserved.</p>
+				</div>
+                </div>
+                
+                <div data-role="page" id="streetart" data-add-back-btn="true">
+           		<div data-role="panel" id="overlayPanel8" data-display="overlay" data-theme="b" data-position-fixed="true">
+                  <ul data-role="listview">
+                    <li data-role="list-divider">MENU</li>
+                    	<li><a href="#home" data-transition="slide">Home</a></li>
+                        <li><a href="#food" data-transition="slide">Food</a></li>
+                        <li><a href="#art" data-transition="slide">Art</a></li>
+                        <li><a href="#nlife" data-transition="slide">Nightlife</a></li>
+                        <li><a href="#social" data-transition="slide">Social</a></li>
+                        <li><a href="#vintage" data-transition="slide">Vintage</a></li>
+                        <li data-role="list-divider"></li>
+                     <li data-icon="delete" data-rel="close"><a href="#" data-transition="slide">CLOSE</a></li>
+                 </ul><!-- panel content ends here -->
+            </div><!-- /panel -->
+            
+             <div data-role="header" data-theme="b" data-position="fixed">
+                <a href="#overlayPanel8" data-transition="slide" class="ui-btn ui-corner-all ui-icon-bars ui-shadow-icon ui-btn-icon-notext">Menu</a>
+                <h1>STREET & ART</h1>
+                <a href="#home" data-transition="slide" data-role="button" data-icon="myiconh" data-iconpos="notext">home</a>
+   		     </div>
+               
+                <div data-role="content">
+                <div><img src="img/str.jpg" alt="str photo" style="width:100%"/></div>
+                   <div class="choice_list">
+                   <h1> Pick a spot..</h1>
+                    <ul data-role="listview" data-inset="true" >
+                     <li><a href="#str1" data-transition="slide"> <img src="img/str1.jpg"/> <h2> The Space man </h2> </a></li>
+                     <li><a href="#str2" data-transition="slide"> <img src="img/str2.jpg"/> <h2> The Space woman </h2></a></li>
+                     <li><a href="#str3" data-transition="slide"> <img src="img/str3.jpg"/> <h2> Butterfly </h2></a></li>
+                     <li><a href="#str4" data-transition="slide"> <img src="img/str4.jpg"/> <h2> WTF?! </h2></a></li>
+                     <li><a href="#str5" data-transition="slide"> <img src="img/str5.jpg"/> <h2> The Fairy house </h2></a></li>
+                     <li><a href="#str5" data-transition="slide"> <img src="img/str6.jpg"/> <h2> Christiania </h2></a></li>
+                    </ul>
+                    </div>
+                   </div>
+                   <div data-role="footer" data-theme="b" data-position="fixed">
+                    <div align="center" style="padding: 1%;">
+                    <a href="index.html" data-role="button" data-icon="myiconwp" data-iconpos="notext">www</a>
+                    <a href="index.html" data-role="button" data-icon="myiconfb" data-iconpos="notext">fb</a>
+                    <a href="index.html" data-role="button" data-icon="myiconin" data-iconpos="notext">in</a>
+                    <a href="index.html" data-role="button" data-icon="myicong" data-iconpos="notext">g</a>
+                    <p align="center">&copy; 2016 <a style="text-decoration:none;" href="http://www.cphbusiness.dk/" target="new">CPH Business</a>. All rights reserved.</p>
+                  </div>
+              </div>
+                  </div><!-- streetart /page -->
+                
+                
+       </body>
+</html>

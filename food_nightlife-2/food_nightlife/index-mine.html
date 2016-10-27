@@ -1,0 +1,561 @@
+<!doctype html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <title>UE App</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="css/style.css">
+            <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+            <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+            <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+            <script src="http://maps.google.com/maps/api/js?v=3sensor=false"></script>
+            <script src="map.js" type="text/javascript"></script>
+
+    </head>
+
+    <body>
+
+        <!-- HOME PAGE -->
+
+            <div data-role="page" id="home">
+                <div data-role="panel" id="overlayPanel" data-display="overlay" data-theme="b">
+                      <ul data-role="listview">
+                        <li data-role="list-divider">MENU</li>
+                            <li><a href="#food" data-transition="slide">Food</a></li>
+                            <li><a href="#art" data-transition="slide">Art</a></li>
+                            <li><a href="#nlife" data-transition="slide">Nightlife</a></li>
+                            <li><a href="#social" data-transition="slide">Social</a></li>
+                            <li><a href="#vintage" data-transition="slide">Vintage</a></li>
+                            <li data-role="list-divider"></li>
+                         <li data-icon="delete" data-rel="close"><a href="#" data-transition="slide">CLOSE</a></li>
+                     </ul><!-- panel content ends here -->
+                </div><!-- /panel -->
+
+
+              <div data-role="header" data-theme="b" data-position="fixed">
+                   <a href="#overlayPanel" data-transition="slide" class="ui-btn ui-corner-all ui-icon-bars ui-shadow-icon ui-btn-icon-notext">Menu</a>
+                    <h1>URBAN EXPLORER</h1>
+                    <a href="#home" data-transition="slide" data-role="button" data-icon="myiconh" data-iconpos="notext">www</a>
+              </div>
+
+                  <div data-role="main" class="ui-content">
+
+                   <div class="ui-field-contain">
+                      <input type="search" name="search" id="search" value="" placeholder="Search">
+                   </div>
+
+
+                    <ul data-role="listview" data-inset="true" data-theme="b">
+                        <li><a href="#food" data-transition="slide"><img src="img/food.jpg" alt="food">
+                            <h2>FOOD</h2>
+                            <p>The good food mood..</p></a>
+                        </li>
+                        <li><a href="#art" data-transition="slide"><img src="img/art.jpg" alt="art">
+                            <h2>ART</h2>
+                            <p>The art of the streets.</p></a>
+                        </li>
+                        <li><a href="#nlife" data-transition="slide"><img src="img/life.jpg" alt="nightlife">
+                            <h2>NIGHTLIFE</h2>
+                            <p>Alternative Adventurer..</p></a>
+                        </li>
+                        <li><a href="#social" data-transition="slide"><img src="img/social.jpg" alt="social">
+                            <h2>SOCIAL</h2>
+                            <p>Free Events and other cool sfaff you can do around here.. </p></a>
+                        </li>
+                        <li><a href="#vintage" data-transition="slide"><img src="img/vintage.jpg" alt="vintage">
+                            <h2>VINTAGE</h2>
+                            <p>Old Copenhagen - photos from the dusty past..</p></a>
+                        </li>
+                    </ul>
+
+                 </div>
+                  <div data-role="footer" data-theme="b" data-position="fixed">
+                    <div align="center" style="padding: 1%;">
+                    <a href="index.html" data-role="button" data-icon="myiconwp" data-iconpos="notext">www</a>
+                    <a href="index.html" data-role="button" data-icon="myiconfb" data-iconpos="notext">fb</a>
+                    <a href="index.html" data-role="button" data-icon="myiconin" data-iconpos="notext">in</a>
+                    <a href="index.html" data-role="button" data-icon="myicong" data-iconpos="notext">g</a>
+                    <p align="center">&copy; 2016 <a style="text-decoration:none;" href="http://www.cphbusiness.dk/" target="new">CPH Business</a>. All rights reserved.</p>
+                    </div>
+
+                  </div>
+               </div><!--end page one END HOME PAGE-->
+
+
+    <!-- FOOD PAGE -->
+
+           <div data-role="page" id="food">
+           <div data-role="panel" id="overlayPanel30" data-display="overlay" data-theme="b">
+                  <ul data-role="listview">
+                    <li data-role="list-divider">MENU</li>
+                    	<li><a href="#home" data-transition="slide">Home</a></li>
+                    	<li><a href="#food" data-transition="slide">Food</a></li>
+                        <li><a href="#art" data-transition="slide">Art</a></li>
+                        <li><a href="#nlife" data-transition="slide">Nightlife</a></li>
+                        <li><a href="#social" data-transition="slide">Social</a></li>
+                        <li><a href="#vintage" data-transition="slide">Vintage</a></li>
+                        <li data-role="list-divider"></li>
+                     <li data-icon="delete" data-rel="close"><a href="#" data-transition="slide">CLOSE</a></li>
+                 </ul><!-- panel content ends here -->
+            </div><!-- /panel -->
+
+          <div data-role="header" data-theme="b" data-position="fixed">
+               <a href="#overlayPanel30" data-transition="slide" class="ui-btn ui-corner-all ui-icon-bars ui-shadow-icon ui-btn-icon-notext">Menu</a>
+                <h1>URBAN EXPLORER</h1>
+                <a href="#home" data-transition="slide" data-role="button" data-icon="myiconh" data-iconpos="notext">www</a>
+   		  </div>
+
+            <div data-role="main" class="ui-content">
+                 <div id="food_categories" data-role="main" data-add-back-btn="true">
+                   <div data-role="header">
+                   <img alt="food category image" src="img/food_c.png" width="100%">
+                    <h1 style="text-align:center;">Pick your restaurant</h1>
+                   </div>
+                    <div data-role="content">
+                       <div class="choice_list">
+                            <ul data-role="listview" data-inset="true" >
+                             <li><a href="#papiroen" data-transition="slide"> <img src="img/food_c1.jpg"/> <h2> Copenhagen Street Food</h2> <p> 4.5 stars </p></a></li>
+                             <li><a href="#bror" data-transition="slide"> <img src="img/food_c2.jpg"/> <h2> Restaurant Bror </h2> <p> 4 stars </p> </a></li>
+                             <li><a href="#spisehuset" data-transition="slide"> <img src="img/food_c3.jpg"/> <h2> Spisehuset Rub og Stub</h2> <p> 4 star </p> </a></li>
+                             <li><a href="#morgen" data-transition="slide"> <img src="img/food_c4.jpg"/> <h2> Morgenstedet</h2> <p> 3 stars </p> </a></li>
+                            <li><a href="#paludan" data-transition="slide"> <img src="img/food_c5.jpg"/> <h2> Paludan's Book and Cafe</h2> <p> 2 stars </p> </a></li>
+                            </ul>
+                        </div>
+                       </div>
+                    </div>
+               </div>
+
+              <div data-role="footer" data-theme="b" data-position="fixed">
+                    <div align="center" style="padding: 1%;">
+                    <a href="index.html" data-role="button" data-icon="myiconwp" data-iconpos="notext">www</a>
+                    <a href="index.html" data-role="button" data-icon="myiconfb" data-iconpos="notext">fb</a>
+                    <a href="index.html" data-role="button" data-icon="myiconin" data-iconpos="notext">in</a>
+                    <a href="index.html" data-role="button" data-icon="myicong" data-iconpos="notext">g</a>
+                    <p align="center">&copy; 2016 <a style="text-decoration:none;" href="http://www.cphbusiness.dk/" target="new">CPH Business</a>. All rights reserved.</p>
+                </div>
+              </div>
+            </div><!-- END FOOD PAGE-->
+
+
+        <!-- FOOD DESCRIPTION PAGES -->
+        <!-- FOOD 1 - PAPIROEN -->
+
+            <div data-role="page" id="papiroen" >
+                <div data-role="panel" id="overlayPane31" data-display="overlay" data-theme="b">
+                          <ul data-role="listview">
+                            <li data-role="list-divider">MENU</li>
+                                <li><a href="#home" data-transition="slide">Home</a></li>
+                                <li><a href="#food" data-transition="slide">Food</a></li>
+                                <li><a href="#art" data-transition="slide">Art</a></li>
+                                <li><a href="#nlife" data-transition="slide">Nightlife</a></li>
+                                <li><a href="#social" data-transition="slide">Social</a></li>
+                                <li><a href="#vintage" data-transition="slide">Vintage</a></li>
+                                <li data-role="list-divider"></li>
+                             <li data-icon="delete" data-rel="close"><a href="#" data-transition="slide">CLOSE</a></li>
+                         </ul><!-- panel content ends here -->
+                    </div><!-- /panel -->
+
+                  <div data-role="header" data-theme="b" data-position="fixed">
+                       <a href="#overlayPane31" data-transition="slide" class="ui-btn ui-corner-all ui-icon-bars ui-shadow-icon ui-btn-icon-notext">Menu</a>
+                        <h1>URBAN EXPLORER</h1>
+                        <a href="#home" data-transition="slide" data-role="button" data-icon="myiconh" data-iconpos="notext">www</a>
+                  </div>
+
+                <div id="papiroen" data-role="main" data-add-back-btn="true">
+                    <div data-role="content">
+                        <div data-role="header">
+                            <img width="100%" src="http://files.guidedanmark.org/files/382/382_14202.jpg" alt="street food photo"/>
+                            <h1 style="text-align:center;">Copenhagen Street Food</h1>
+                        </div>
+                            <div id="description">
+                                    <p style="text-align: center;">Copenhagen Street Food on Papirøen is the city's first and only genuine street food market. In the small food trucks you can get delicious sustainable street food from all corners of the world. It is also a place for creative souls, such as artists and musicians, and there are often events in between meals.</p>
+                            </div>
+                            <div data-role="controlgroup" data-type="vertical">
+                                    <a style="padding:15px;" href="http://copenhagenstreetfood.dk/en/" rel="external" data-role="button" data-role="button" data-icon="myiconwww" > Website</a>
+                                    <a style="padding:15px;" href="https://www.facebook.com/copenhagenstreetfood/?fref=ts" rel="external" data-role="button" data-icon="myiconfb">Facebook page</a>
+                        </div>
+
+
+                            <div id="location" style="text-align:center;">
+                                    <h3>Location</h3>
+                                    <hr style="width:10%;">
+                                    <p>Papirøen, Trangravsvej 14, hall 7/8</p>
+                                    <p>1436 København K</p>
+                                    <!-- GEO LOCATION  -->
+                                     <div id="map_wrapper">
+                                        <div id="map_canvas" class="mapping"></div>
+                                    </div>
+                                    <div id="contact_buttons">
+                                    <a href="https://www.google.dk/maps/place/Copenhagen+Street+Food/@55.6793682,12.596088,494m/data=!3m2!1e3!4b1!4m5!3m4!1s0x4652533b4ae238fd:0xc0e47d5d65b2f5e7!8m2!3d55.6793652!4d12.5982767?hl=da" data-role="button" data-icon="maps"> Find on Google Maps </a>
+                                    <a href="https://www.google.dk/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=copenhagen%20street%20food&lrd=0x4652533b4ae238fd:0xc0e47d5d65b2f5e7,1,"   data-rel="popup" data-role="button" data-icon="tel">Google reviews </a>
+                                    </div>
+                                </div>
+
+
+
+                         <div data-role="footer" data-theme="b" data-position="fixed">
+                        <div align="center" style="padding: 1%;">
+                        <a href="index.html" data-role="button" data-icon="myiconwp" data-iconpos="notext">www</a>
+                        <a href="index.html" data-role="button" data-icon="myiconfb" data-iconpos="notext">fb</a>
+                        <a href="index.html" data-role="button" data-icon="myiconin" data-iconpos="notext">in</a>
+                        <a href="index.html" data-role="button" data-icon="myicong" data-iconpos="notext">g</a>
+                        <p align="center">&copy; 2016 <a style="text-decoration:none;" href="http://www.cphbusiness.dk/" target="new">CPH Business</a>. All rights reserved.</p>
+                        </div>
+
+                      </div>
+                       </div>
+                    </div>
+                </div> <!-- END FOOD 1 -->
+
+        <!-- FOOD 2 - RESTAURANT BROR -->
+
+            <div data-role="page" id="bror">
+                <div data-role="panel" id="overlayPane32" data-display="overlay" data-theme="b">
+                          <ul data-role="listview">
+                            <li data-role="list-divider">MENU</li>
+                                <li><a href="#home" data-transition="slide">Home</a></li>
+                                <li><a href="#food" data-transition="slide">Food</a></li>
+                                <li><a href="#art" data-transition="slide">Art</a></li>
+                                <li><a href="#nlife" data-transition="slide">Nightlife</a></li>
+                                <li><a href="#social" data-transition="slide">Social</a></li>
+                                <li><a href="#vintage" data-transition="slide">Vintage</a></li>
+                                <li data-role="list-divider"></li>
+                             <li data-icon="delete" data-rel="close"><a href="#" data-transition="slide">CLOSE</a></li>
+                         </ul><!-- panel content ends here -->
+                    </div><!-- /panel -->
+
+                  <div data-role="header" data-theme="b" data-position="fixed">
+                       <a href="#overlayPane32" data-transition="slide" class="ui-btn ui-corner-all ui-icon-bars ui-shadow-icon ui-btn-icon-notext">Menu</a>
+                        <h1>URBAN EXPLORER</h1>
+                        <a href="#home" data-transition="slide" data-role="button" data-icon="myiconh" data-iconpos="notext">www</a>
+                  </div>
+
+                <div id="bror" data-role="main" data-add-back-btn="true">
+                    <div data-role="content">
+                        <div data-role="header">
+                            <img width="100%" src="img/bror.jpg" alt="res bror photo"/>
+                            <h1 style="text-align:center;">Restaurant Bror</h1>
+                        </div>
+                            <div id="description">
+                                    <p style="text-align: center;">Bror is the best place in Copenhagen to satisfy your cravings for Danish food, fish dishes, even vegeterian meals. Their beer selection is very affordable, not to mention stronger than rocket fuel. Dinner will set you back about €40, which is pretty reasonable for Copenhagen.</p>
+                            </div>
+                            <div data-role="controlgroup" data-type="vertical">
+                                    <a style="padding:15px;" href="http://www.restaurantbror.dk/" rel="external" data-role="button" data-role="button" data-icon="myiconwww" > Website</a>
+                                    <a style="padding:15px;" href="https://www.facebook.com/RestaurantBROR/" rel="external" data-role="button" data-icon="myiconfb">Facebook page</a>
+                        </div>
+
+
+                            <div id="location" style="text-align:center;">
+                                    <h3>Location</h3>
+                                    <hr style="width:10%;">
+                                    <p>Skt. Peders Stræde 24A</p>
+                                    <p>1453 København</p>
+                                    <div id="contact_buttons">
+
+                                    <a href="https://www.google.dk/maps?espv=2&q=restaurant+bror&bav=on.2,or.r_cp.&biw=1536&bih=735&dpr=1.25&ion=1&um=1&ie=UTF-8&sa=X&ved=0ahUKEwi4rI634frPAhWDliwKHS6FC8MQ_AUIBigB"><img  src="img/bror_map.jpg" alt="map" width="100%" a>
+                                    <a href="https://www.google.dk/search?q=restaurant+bror&oq=res&aqs=chrome.0.69i59j69i60l3j69i65l2.851j0j4&sourceid=chrome&ie=UTF-8#lrd=0x4652530e49100803:0xbcd70d2c6a420dcf,1,"   data-rel="popup" data-role="button" data-icon="tel">Google reviews </a>
+                                    </div>
+                                </div>
+
+
+
+                         <div data-role="footer" data-theme="b" data-position="fixed">
+                        <div align="center" style="padding: 1%;">
+                        <a href="index.html" data-role="button" data-icon="myiconwp" data-iconpos="notext">www</a>
+                        <a href="index.html" data-role="button" data-icon="myiconfb" data-iconpos="notext">fb</a>
+                        <a href="index.html" data-role="button" data-icon="myiconin" data-iconpos="notext">in</a>
+                        <a href="index.html" data-role="button" data-icon="myicong" data-iconpos="notext">g</a>
+                        <p align="center">&copy; 2016 <a style="text-decoration:none;" href="http://www.cphbusiness.dk/" target="new">CPH Business</a>. All rights reserved.</p>
+                        </div>
+
+                      </div>
+                       </div>
+                    </div>
+                </div> <!-- END FOOD 2 -->
+
+        <!-- FOOD 3 - MORGENSTEDET-->
+
+            <div data-role="page" id="morgen">
+                <div data-role="panel" id="overlayPanel9" data-display="overlay" data-theme="b">
+                          <ul data-role="listview">
+                            <li data-role="list-divider">MENU</li>
+                                <li><a href="#home" data-transition="slide">Home</a></li>
+                                <li><a href="#food" data-transition="slide">Food</a></li>
+                                <li><a href="#art" data-transition="slide">Art</a></li>
+                                <li><a href="#nlife" data-transition="slide">Nightlife</a></li>
+                                <li><a href="#social" data-transition="slide">Social</a></li>
+                                <li><a href="#vintage" data-transition="slide">Vintage</a></li>
+                                <li data-role="list-divider"></li>
+                             <li data-icon="delete" data-rel="close"><a href="#" data-transition="slide">CLOSE</a></li>
+                         </ul><!-- panel content ends here -->
+                    </div><!-- /panel -->
+
+                  <div data-role="header" data-theme="b" data-position="fixed">
+                       <a href="#overlayPanel9" data-transition="slide" class="ui-btn ui-corner-all ui-icon-bars ui-shadow-icon ui-btn-icon-notext">Menu</a>
+                        <h1>URBAN EXPLORER</h1>
+                        <a href="#home" data-transition="slide" data-role="button" data-icon="myiconh" data-iconpos="notext">www</a>
+                  </div>
+
+                <div id="morgen" data-role="main" data-add-back-btn="true">
+                    <div data-role="content">
+
+
+                        </div>
+                      </div>
+                       </div>
+                </div> <!-- END FOOD 3 -->
+
+        <!-- PALUDAN -->
+
+            <div data-role="page" id="paludan">
+                <div data-role="panel" id="overlayPanel10" data-display="overlay" data-theme="b">
+                          <ul data-role="listview">
+                            <li data-role="list-divider">MENU</li>
+                                <li><a href="#home" data-transition="slide">Home</a></li>
+                                <li><a href="#food" data-transition="slide">Food</a></li>
+                                <li><a href="#art" data-transition="slide">Art</a></li>
+                                <li><a href="#nlife" data-transition="slide">Nightlife</a></li>
+                                <li><a href="#social" data-transition="slide">Social</a></li>
+                                <li><a href="#vintage" data-transition="slide">Vintage</a></li>
+                                <li data-role="list-divider"></li>
+                             <li data-icon="delete" data-rel="close"><a href="#" data-transition="slide">CLOSE</a></li>
+                         </ul><!-- panel content ends here -->
+                    </div><!-- /panel -->
+
+                  <div data-role="header" data-theme="b" data-position="fixed">
+                       <a href="#overlayPanel10" data-transition="slide" class="ui-btn ui-corner-all ui-icon-bars ui-shadow-icon ui-btn-icon-notext">Menu</a>
+                        <h1>URBAN EXPLORER</h1>
+                        <a href="#home" data-transition="slide" data-role="button" data-icon="myiconh" data-iconpos="notext">www</a>
+                  </div>
+
+                <div id="paludan" data-role="main" data-add-back-btn="true">
+                    <div data-role="content">
+
+
+                        </div>
+                      </div>
+                       </div>
+                </div> <!-- end page -->
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- NIGHTLIFE PAGE -->
+                   <div data-role="page" id="nlife">
+                    <div data-role="panel" id="overlayPanel13" data-display="overlay" data-theme="b">
+                        <ul data-role="listview">
+                            <li><a href="#home" data-transition="slide">Home</a></li>
+                                <li><a href="#food" data-transition="slide">Food</a></li>
+                                <li><a href="#art" data-transition="slide">Art</a></li>
+                                <li><a href="#nlife" data-transition="slide">Nightlife</a></li>
+                                <li><a href="#social" data-transition="slide">Social</a></li>
+                                <li><a href="#vintage" data-transition="slide">Vintage</a></li>
+                                <li data-role="list-divider"></li>
+                             <li data-icon="delete" data-rel="close"><a href="#" data-transition="slide">CLOSE</a></li>
+                         </ul><!-- panel content ends here -->
+                    </div><!-- /panel -->
+
+                  <div data-role="header" data-theme="b" data-position="fixed">
+                       <a href="#overlayPanel13" data-transition="slide" class="ui-btn ui-corner-all ui-icon-bars ui-shadow-icon ui-btn-icon-notext">Menu</a>
+                        <h1>URBAN EXPLORER</h1>
+                        <a href="#home" data-transition="slide" data-role="button" data-icon="myiconh" data-iconpos="notext">www</a>
+                  </div>
+						
+                     <div data-role="main" class="ui-content">
+                        <h1> Night life</h1>
+                        <div class="choice_list">
+                          <ul data-role="listview" data-inset="true" data-theme="b">
+                            <li><a href="#floss" data-transition="slide"> <img src="img/flossicon.jpg"/> <h2> Floss</h2></a></li>
+                            <li><a href="#jazzhouse" data-transition="slide"> <img src="img/jazzicon.jpg "/> <h2> Jazz House</h2> </a></li>
+                            <li><a href="#culture" data-transition="slide"> <img src="img/cultureicon.jpg "/> <h2> Culture box</h2> </a></li>
+                          </ul>
+                        <a href="#" class="ui-btn" data-theme="b" data-rel="back">Go Back</a>  
+                        </div>  
+					</div>
+                        
+                         
+
+            <!-- NIGHTLIFE 1 - FLOSS BAR -->
+
+            <div data-role="page" id="floss">
+                <div data-role="panel" id="overlayPanel20" data-display="overlay" data-theme="b">
+                          <ul data-role="listview">
+                            <li data-role="list-divider">MENU</li>
+                                <li><a href="#home" data-transition="slide">Home</a></li>
+                                <li><a href="#food" data-transition="slide">Food</a></li>
+                                <li><a href="#art" data-transition="slide">Art</a></li>
+                                <li><a href="#nlife" data-transition="slide">Nightlife</a></li>
+                                <li><a href="#social" data-transition="slide">Guide</a></li>
+                                <li><a href="#vintage" data-transition="slide">Vintage</a></li>
+                                <li data-role="list-divider"></li>
+                             <li data-icon="delete" data-rel="close"><a href="#" data-transition="slide">CLOSE</a></li>
+                         </ul><!-- panel content ends here -->
+                    </div><!-- /panel -->
+
+                  <div data-role="header" data-theme="b" data-position="fixed">
+                       <a href="#overlayPanel20" data-transition="slide" class="ui-btn ui-corner-all ui-icon-bars ui-shadow-icon ui-btn-icon-notext">Menu</a>
+                        <h1>URBAN EXPLORER</h1>
+                        <a href="#home" data-transition="slide" data-role="button" data-icon="myiconh" data-iconpos="notext">www</a>
+                  </div>
+
+                 <div data-role="main" class="ui-content">
+                     <img width="100%" src="img/floss.jpg" alt="floss photo"/>
+                        <h1 style="text-align:center;">Floss bar</h1>
+                   			<div id="description6">
+                              <p>Once the scene in Copenhagen for 80s punk-rockers, Floss is now a dive bar that still retains its original debaucherous charm.
+                                Floss offers cheap drinks, billiard tables and rock music. The weekends bring two Guld Tuborgs for 27 DKK during happy hour from 22-23, and ten tequila shots are always 100 DKK. Those feeling brave can select between two Absinthe options. Smoking is permitted inside.</p>
+                            </div>
+                            <div data-role="controlgroup6" data-type="vertical">
+                              <a style="padding:15px;" href="https://www.facebook.com/Floss-398904730345/" rel="external" data-role="button" data-icon="myiconfb">Facebook page</a>
+                        	</div>
+							<div id="location6" style="text-align:center;">
+                                    <!-- GEO LOCATION  -->
+                                     <img width="100%" src="img/flossmap.jpg" alt="floss photo"/>
+                                    <div id="contact_buttons6">
+                                    <a href="https://www.google.dk/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=floss%20copenhagen&lrd=0x4652530e2152216b:0x3e30829f6f77f3be,1," data-role="button" data-icon="maps"> Google reviews </a>
+                                    </div>
+                                </div>
+							   <a href="#" class="ui-btn" data-theme="b" data-rel="back">Go Back</a> 
+							</div>
+
+                        
+
+        <!-- NIGHTLIFE 2 - JAZZBAR -->
+
+        <div data-role="page" id="jazzhouse">
+            <div data-role="panel" id="overlayPanel21" data-display="overlay" data-theme="b">
+                      <ul data-role="listview">
+                        <li data-role="list-divider">MENU</li>
+                            <li><a href="#home" data-transition="slide">Home</a></li>
+                            <li><a href="#food" data-transition="slide">Food</a></li>
+                            <li><a href="#art" data-transition="slide">Art</a></li>
+                            <li><a href="#nlife" data-transition="slide">Nightlife</a></li>
+                            <li><a href="#social" data-transition="slide">Guide</a></li>
+                            <li><a href="#vintage" data-transition="slide">Vintage</a></li>
+                            <li data-role="list-divider"></li>
+                         <li data-icon="delete" data-rel="close"><a href="#" data-transition="slide">CLOSE</a></li>
+                     </ul><!-- panel content ends here -->
+                </div><!-- /panel -->
+
+              <div data-role="header" data-theme="b" data-position="fixed">
+                   <a href="#overlayPanel21" data-transition="slide" class="ui-btn ui-corner-all ui-icon-bars ui-shadow-icon ui-btn-icon-notext">Menu</a>
+                    <h1>URBAN EXPLORER</h1>
+                    <a href="#home" data-transition="slide" data-role="button" data-icon="myiconh" data-iconpos="notext">www</a>
+              </div>
+
+            		 <div data-role="main" class="ui-content">
+                        <img width="100%" src="img/jazz.jpg" alt="floss photo"/>
+                        <h1 style="text-align:center;">Jazz House</h1>
+                  
+                        <div id="description7">
+                          <p>Situated right in the heart of Copenhagen, Jazzhouse offers a contemporary and cutting edge take on jazz and bordering genres on two stages.Jazzhouse is a place for experiments, constantly exploring the shapes of jazz to come, presenting underground artists as well as defining musical legends. Jazzhouse sees jazz as an open form of expression rather than a genre with a fixed set of rules.</p>
+                        </div>
+                        <div data-role="controlgroup7" data-type="vertical">
+                                <a style="padding:15px;" href="https://www.facebook.com/JazzHouse?rf=175201509180745" rel="external" data-role="button" data-icon="myiconfb">Facebook page</a>
+                                <a style="padding:15px;" href="http://www.jazzhouse.dk/" rel="external" data-role="button" data-icon="myiconfb">Website</a>
+                    </div>
+
+
+                        <div id="location" style="text-align:center;">
+                                <!-- GEO LOCATION  -->
+                                 <img width="100%" src="img/jazzmap.png" alt="floss photo"/>
+                                <div id="contact_buttons">
+                                <a href="https://www.google.dk/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=jazz%20house%20cph&lrd=0x46525310c37f1293:0x1f0ba4d30216d8f6,1," data-role="button" data-icon="maps"> Google reviews </a>
+                                </div>
+                            </div>
+
+
+
+                     <div data-role="footer" data-theme="b" data-position="fixed">
+                    <div align="center" style="padding: 1%;">
+                    <a href="index.html" data-role="button" data-icon="myiconwp" data-iconpos="notext">www</a>
+                    <a href="index.html" data-role="button" data-icon="myiconfb" data-iconpos="notext">fb</a>
+                    <a href="index.html" data-role="button" data-icon="myiconin" data-iconpos="notext">in</a>
+                    <a href="index.html" data-role="button" data-icon="myicong" data-iconpos="notext">g</a>
+                    <p align="center">&copy; 2016 <a style="text-decoration:none;" href="http://www.cphbusiness.dk/" target="new">CPH Business</a>. All rights reserved.</p>
+                    </div>
+
+                  </div>
+                   </div>
+                </div>
+            </div>
+            <!-- NIGHTLIFE 2 END -->
+
+
+        <!-- NIGHTLIFE 3 - CULTURE BOX -->
+
+        <div data-role="page" id="culture">
+            <div data-role="panel" id="overlayPanel22" data-display="overlay" data-theme="b">
+                      <ul data-role="listview">
+                        <li data-role="list-divider">MENU</li>
+                            <li><a href="#home" data-transition="slide">Home</a></li>
+                            <li><a href="#food" data-transition="slide">Food</a></li>
+                            <li><a href="#art" data-transition="slide">Art</a></li>
+                            <li><a href="#nlife" data-transition="slide">Nightlife</a></li>
+                            <li><a href="#social" data-transition="slide">Social</a></li>
+                            <li><a href="#vintage" data-transition="slide">Vintage</a></li>
+                            <li data-role="list-divider"></li>
+                         <li data-icon="delete" data-rel="close"><a href="#" data-transition="slide">CLOSE</a></li>
+                     </ul><!-- panel content ends here -->
+                </div><!-- /panel -->
+
+              <div data-role="header" data-theme="b" data-position="fixed">
+                   <a href="#overlayPanel6" data-transition="slide" class="ui-btn ui-corner-all ui-icon-bars ui-shadow-icon ui-btn-icon-notext">Menu</a>
+                    <h1>URBAN EXPLORER</h1>
+                    <a href="#home" data-transition="slide" data-role="button" data-icon="myiconh" data-iconpos="notext">www</a>
+              </div>
+
+            <div id="papiroen" data-role="main" data-add-back-btn="true">
+                <div data-role="content">
+                    <div data-role="header">
+                        <img width="100%" src="img/culture.jpg" alt="floss photo"/>
+                        <h1 style="text-align:center;">Culture box</h1>
+                    </div>
+                        <div id="description">
+                          <p>
+Culture Box is not only the most prominent venue for electronic music in Danmark, but also a government supported regional music venue, chosen to be the main platform for the electronic scene in the country.
+ Culture Box is used for a wide range of events, including everything from teaching sessions to dance shows and movie productions. Durring the weekends, the club always has a solid line up of the best international and local artists of the underground music scene.
+  The music styles are broad, but ranges from electronica, through bass music, to house and techno.
+                      </div>
+                    </p>
+                        <div data-role="controlgroup" data-type="vertical">
+                                <a style="padding:15px;" href="https://www.facebook.com/cultureboxdk/?fref=ts" rel="external" data-role="button" data-icon="myiconfb">Facebook page</a>
+                                <a style="padding:15px;" href="http://www.culture-box.com/" rel="external" data-role="button" data-icon="myiconfb">Website</a>
+                    </div>
+
+
+                        <div id="location" style="text-align:center;">
+                                <!-- GEO LOCATION  -->
+                                 <img width="100%" src="img/culturemap.png" alt="floss photo"/>
+                                <div id="contact_buttons">
+                                <a href="https://www.google.dk/search?q=culture+box&espv=2&biw=1163&bih=592&source=lnms&sa=X&ved=0ahUKEwj2ppjP8vrPAhVBrCwKHRD4CWsQ_AUIBygA&dpr=2#lrd=0x4652531eb340398d:0x3f42d8bfa9a46f55,1," data-role="button" data-icon="maps"> Google reviews </a>
+                                </div>
+                            </div>
+
+
+
+                     <div data-role="footer" data-theme="b" data-position="fixed">
+                    <div align="center" style="padding: 1%;">
+                    <a href="index.html" data-role="button" data-icon="myiconwp" data-iconpos="notext">www</a>
+                    <a href="index.html" data-role="button" data-icon="myiconfb" data-iconpos="notext">fb</a>
+                    <a href="index.html" data-role="button" data-icon="myiconin" data-iconpos="notext">in</a>
+                    <a href="index.html" data-role="button" data-icon="myicong" data-iconpos="notext">g</a>
+                    <p align="center">&copy; 2016 <a style="text-decoration:none;" href="http://www.cphbusiness.dk/" target="new">CPH Business</a>. All rights reserved.</p>
+                    </div>
+
+                  </div>
+                   </div>
+                </div>
+            </div>
+            <!-- NIGHTLIFE 3 END -->
+
+       </body>
+</html>

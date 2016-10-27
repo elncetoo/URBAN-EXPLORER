@@ -1,0 +1,457 @@
+<!doctype html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <title>UE App</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="css/style.css">
+            <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+            <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+            <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+            <script src="http://maps.google.com/maps/api/js?v=3sensor=false"></script>  
+            <script src="map.js" type="text/javascript"></script>
+        
+    </head>
+
+    <body>
+    
+        <!-- HOME PAGE -->
+        
+            <div data-role="page" id="home">
+                <div data-role="panel" id="overlayPanel" data-display="overlay" data-theme="b">
+                      <ul data-role="listview">
+                        <li data-role="list-divider">MENU</li>
+                            <li><a href="#food" data-transition="slide">Food</a></li>
+                            <li><a href="#art" data-transition="slide">Art</a></li>
+                            <li><a href="#nlife" data-transition="slide">Nightlife</a></li>
+                            <li><a href="#social" data-transition="slide">Social</a></li>
+                            <li><a href="#vintage" data-transition="slide">Vintage</a></li>
+                            <li data-role="list-divider"></li>
+                         <li data-icon="delete" data-rel="close"><a href="#" data-transition="slide">CLOSE</a></li>
+                     </ul><!-- panel content ends here -->
+                </div><!-- /panel -->
+
+
+              <div data-role="header" data-theme="b" data-position="fixed">
+                   <a href="#overlayPanel" data-transition="slide" class="ui-btn ui-corner-all ui-icon-bars ui-shadow-icon ui-btn-icon-notext">Menu</a>
+                    <h1>URBAN EXPLORER</h1>
+                    <a href="#home" data-transition="slide" data-role="button" data-icon="myiconh" data-iconpos="notext">www</a>
+              </div>
+
+                  <div data-role="main" class="ui-content">
+
+                   <div class="ui-field-contain">
+                      <input type="search" name="search" id="search" value="" placeholder="Search">
+                   </div>
+
+
+                    <ul data-role="listview" data-inset="true" data-theme="b">
+                        <li><a href="#food" data-transition="slide"><img src="https://s-media-cache-ak0.pinimg.com/564x/45/3e/eb/453eeb653cd891ab1bd6cedb8810dd6e.jpg" alt="food">
+                            <h2>FOOD</h2>
+                            <p>The good food mood..</p></a>
+                        </li>
+                        <li><a href="#art" data-transition="slide"><img src="img/art.jpg" alt="art">
+                            <h2>ART</h2>
+                            <p>The art of the streets.</p></a>
+                        </li>
+                        <li><a href="#nlife" data-transition="slide"><img src="https://s-media-cache-ak0.pinimg.com/564x/ce/3f/38/ce3f3870519210025cd68fdbfc77d148.jpg" alt="nightlife">
+                            <h2>NIGHTLIFE</h2>
+                            <p>Alternative Adventurer..</p></a>
+                        </li>
+                        <li><a href="#social" data-transition="slide"><img src="img/social.jpg" alt="social">
+                            <h2>SOCIAL</h2>
+                            <p>Free Events and other cool sfaff you can do around here.. </p></a>
+                        </li>
+                        <li><a href="#vintage" data-transition="slide"><img src="img/vintage.jpg" alt="vintage">
+                            <h2>VINTAGE</h2>
+                            <p>Old Copenhagen - photos from the dusty past..</p></a>
+                        </li>
+                    </ul>
+
+                 </div>
+                  <div data-role="footer" data-theme="b" data-position="fixed">
+                    <div align="center" style="padding: 1%;">
+                    <a href="index.html" data-role="button" data-icon="myiconwp" data-iconpos="notext">www</a>
+                    <a href="index.html" data-role="button" data-icon="myiconfb" data-iconpos="notext">fb</a>
+                    <a href="index.html" data-role="button" data-icon="myiconin" data-iconpos="notext">in</a>
+                    <a href="index.html" data-role="button" data-icon="myicong" data-iconpos="notext">g</a>
+                    <p align="center">&copy; 2016 <a style="text-decoration:none;" href="http://www.cphbusiness.dk/" target="new">CPH Business</a>. All rights reserved.</p>
+                    </div>
+
+                  </div>
+               </div><!--end page one END HOME PAGE-->
+            
+        
+    <!-- FOOD PAGE -->  
+        
+           <div data-role="page" id="food">
+           <div data-role="panel" id="overlayPanel30" data-display="overlay" data-theme="b">
+                  <ul data-role="listview">
+                    <li data-role="list-divider">MENU</li>
+                    	<li><a href="#home" data-transition="slide">Home</a></li>
+                    	<li><a href="#food" data-transition="slide">Food</a></li>
+                        <li><a href="#art" data-transition="slide">Art</a></li>
+                        <li><a href="#nlife" data-transition="slide">Nightlife</a></li>
+                        <li><a href="#social" data-transition="slide">Social</a></li>
+                        <li><a href="#vintage" data-transition="slide">Vintage</a></li>
+                        <li data-role="list-divider"></li>
+                     <li data-icon="delete" data-rel="close"><a href="#" data-transition="slide">CLOSE</a></li>
+                 </ul><!-- panel content ends here -->
+            </div><!-- /panel -->
+                       
+          <div data-role="header" data-theme="b" data-position="fixed">
+               <a href="#overlayPanel30" data-transition="slide" class="ui-btn ui-corner-all ui-icon-bars ui-shadow-icon ui-btn-icon-notext">Menu</a>
+                <h1>URBAN EXPLORER</h1>
+                <a href="#home" data-transition="slide" data-role="button" data-icon="myiconh" data-iconpos="notext">www</a>
+   		  </div>
+          
+             
+                             
+              <div data-role="footer" data-theme="b" data-position="fixed">
+                    <div align="center" style="padding: 1%;">
+                    <a href="index.html" data-role="button" data-icon="myiconwp" data-iconpos="notext">www</a>
+                    <a href="index.html" data-role="button" data-icon="myiconfb" data-iconpos="notext">fb</a>
+                    <a href="index.html" data-role="button" data-icon="myiconin" data-iconpos="notext">in</a>
+                    <a href="index.html" data-role="button" data-icon="myicong" data-iconpos="notext">g</a>
+                    <p align="center">&copy; 2016 <a style="text-decoration:none;" href="http://www.cphbusiness.dk/" target="new">CPH Business</a>. All rights reserved.</p>
+                </div>
+              </div>
+            </div><!-- END FOOD PAGE-->
+        
+        
+        <!-- FOOD DESCRIPTION PAGES -->
+        <!-- FOOD 1 - PAPIROEN -->
+        
+            <div data-role="page" id="papiroen" >
+                <div data-role="panel" id="overlayPane31" data-display="overlay" data-theme="b">
+                          <ul data-role="listview">
+                            <li data-role="list-divider">MENU</li>
+                                <li><a href="#home" data-transition="slide">Home</a></li>
+                                <li><a href="#food" data-transition="slide">Food</a></li>
+                                <li><a href="#art" data-transition="slide">Art</a></li>
+                                <li><a href="#nlife" data-transition="slide">Nightlife</a></li>
+                                <li><a href="#social" data-transition="slide">Social</a></li>
+                                <li><a href="#vintage" data-transition="slide">Vintage</a></li>
+                                <li data-role="list-divider"></li>
+                             <li data-icon="delete" data-rel="close"><a href="#" data-transition="slide">CLOSE</a></li>
+                         </ul><!-- panel content ends here -->
+                    </div><!-- /panel -->
+
+                  <div data-role="header" data-theme="b" data-position="fixed">
+                       <a href="#overlayPane31" data-transition="slide" class="ui-btn ui-corner-all ui-icon-bars ui-shadow-icon ui-btn-icon-notext">Menu</a>
+                        <h1>URBAN EXPLORER</h1>
+                        <a href="#home" data-transition="slide" data-role="button" data-icon="myiconh" data-iconpos="notext">www</a>
+                  </div>
+                    
+                <div id="papiroen" data-role="main" data-add-back-btn="true">
+                    <div data-role="content">
+                        <div data-role="header">
+                            <img width="100%" src="http://files.guidedanmark.org/files/382/382_14202.jpg" alt="street food photo"/>
+                            <h1 style="text-align:center;">Copenhagen Street Food</h1>
+                        </div> 
+                            <div id="description">
+                                    <p style="text-align: center;">Copenhagen Street Food on Papirøen is the city's first and only genuine street food market. In the small food trucks you can get delicious sustainable street food from all corners of the world. It is also a place for creative souls, such as artists and musicians, and there are often events in between meals.</p>
+                            </div>
+                            <div data-role="controlgroup" data-type="vertical">
+                                    <a style="padding:15px;" href="http://copenhagenstreetfood.dk/en/" rel="external" data-role="button" data-role="button" data-icon="myiconwww" > Website</a>
+                                    <a style="padding:15px;" href="https://www.facebook.com/copenhagenstreetfood/?fref=ts" rel="external" data-role="button" data-icon="myiconfb">Facebook page</a>
+                        </div>
+
+                        
+                            <div id="location" style="text-align:center;">	
+                                    <h3>Location</h3>
+                                    <hr style="width:10%;">
+                                    <p>Papirøen, Trangravsvej 14, hall 7/8</p>
+                                    <p>1436 København K</p>	
+                                    <!-- GEO LOCATION  -->    
+                                     <div id="map_wrapper">
+                                        <div id="map_canvas" class="mapping"></div>
+                                    </div>
+                                    <div id="contact_buttons">	
+                                    <a href="https://www.google.dk/maps/place/Copenhagen+Street+Food/@55.6793682,12.596088,494m/data=!3m2!1e3!4b1!4m5!3m4!1s0x4652533b4ae238fd:0xc0e47d5d65b2f5e7!8m2!3d55.6793652!4d12.5982767?hl=da" data-role="button" data-icon="maps"> Find on Google Maps </a> 	
+                                    <a href="https://www.google.dk/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=copenhagen%20street%20food&lrd=0x4652533b4ae238fd:0xc0e47d5d65b2f5e7,1,"   data-rel="popup" data-role="button" data-icon="tel">Google reviews </a>	
+                                    </div>
+                                </div>
+
+
+
+                         <div data-role="footer" data-theme="b" data-position="fixed">
+                        <div align="center" style="padding: 1%;">
+                        <a href="index.html" data-role="button" data-icon="myiconwp" data-iconpos="notext">www</a>
+                        <a href="index.html" data-role="button" data-icon="myiconfb" data-iconpos="notext">fb</a>
+                        <a href="index.html" data-role="button" data-icon="myiconin" data-iconpos="notext">in</a>
+                        <a href="index.html" data-role="button" data-icon="myicong" data-iconpos="notext">g</a>
+                        <p align="center">&copy; 2016 <a style="text-decoration:none;" href="http://www.cphbusiness.dk/" target="new">CPH Business</a>. All rights reserved.</p>
+                        </div>
+
+                      </div>
+                       </div>
+                    </div>
+                </div> <!-- END FOOD 1 -->
+        
+        <!-- FOOD 2 - RESTAURANT BROR -->
+        
+            <div data-role="page" id="bror">
+                <div data-role="panel" id="overlayPane32" data-display="overlay" data-theme="b">
+                          <ul data-role="listview">
+                            <li data-role="list-divider">MENU</li>
+                                <li><a href="#home" data-transition="slide">Home</a></li>
+                                <li><a href="#food" data-transition="slide">Food</a></li>
+                                <li><a href="#art" data-transition="slide">Art</a></li>
+                                <li><a href="#nlife" data-transition="slide">Nightlife</a></li>
+                                <li><a href="#social" data-transition="slide">Social</a></li>
+                                <li><a href="#vintage" data-transition="slide">Vintage</a></li>
+                                <li data-role="list-divider"></li>
+                             <li data-icon="delete" data-rel="close"><a href="#" data-transition="slide">CLOSE</a></li>
+                         </ul><!-- panel content ends here -->
+                    </div><!-- /panel -->
+
+                  <div data-role="header" data-theme="b" data-position="fixed">
+                       <a href="#overlayPane32" data-transition="slide" class="ui-btn ui-corner-all ui-icon-bars ui-shadow-icon ui-btn-icon-notext">Menu</a>
+                        <h1>URBAN EXPLORER</h1>
+                        <a href="#home" data-transition="slide" data-role="button" data-icon="myiconh" data-iconpos="notext">www</a>
+                  </div>
+                    
+                <div id="bror" data-role="main" data-add-back-btn="true">
+                    <div data-role="content">
+                        <div data-role="header">
+                            <img width="100%" src="img/bror.jpg" alt="res bror photo"/>
+                            <h1 style="text-align:center;">Restaurant Bror</h1>
+                        </div> 
+                            <div id="description">
+                                    <p style="text-align: center;">Bror is the best place in Copenhagen to satisfy your cravings for Danish food, fish dishes, even vegeterian meals. Their beer selection is very affordable, not to mention stronger than rocket fuel. Dinner will set you back about €40, which is pretty reasonable for Copenhagen.</p>
+                            </div>
+                            <div data-role="controlgroup" data-type="vertical">
+                                    <a style="padding:15px;" href="http://www.restaurantbror.dk/" rel="external" data-role="button" data-role="button" data-icon="myiconwww" > Website</a>
+                                    <a style="padding:15px;" href="https://www.facebook.com/RestaurantBROR/" rel="external" data-role="button" data-icon="myiconfb">Facebook page</a>
+                        </div>
+
+                        
+                            <div id="location" style="text-align:center;">	
+                                    <h3>Location</h3>
+                                    <hr style="width:10%;">
+                                    <p>Skt. Peders Stræde 24A</p>
+                                    <p>1453 København</p>	
+                                    <div id="contact_buttons">	
+                                    	
+                                    <a href="https://www.google.dk/maps?espv=2&q=restaurant+bror&bav=on.2,or.r_cp.&biw=1536&bih=735&dpr=1.25&ion=1&um=1&ie=UTF-8&sa=X&ved=0ahUKEwi4rI634frPAhWDliwKHS6FC8MQ_AUIBigB"><img  src="img/bror_map.jpg" alt="map" width="100%" a>	
+                                    <a href="https://www.google.dk/search?q=restaurant+bror&oq=res&aqs=chrome.0.69i59j69i60l3j69i65l2.851j0j4&sourceid=chrome&ie=UTF-8#lrd=0x4652530e49100803:0xbcd70d2c6a420dcf,1,"   data-rel="popup" data-role="button" data-icon="tel">Google reviews </a>	
+                                    </div>
+                                </div>
+
+
+
+                         <div data-role="footer" data-theme="b" data-position="fixed">
+                        <div align="center" style="padding: 1%;">
+                        <a href="index.html" data-role="button" data-icon="myiconwp" data-iconpos="notext">www</a>
+                        <a href="index.html" data-role="button" data-icon="myiconfb" data-iconpos="notext">fb</a>
+                        <a href="index.html" data-role="button" data-icon="myiconin" data-iconpos="notext">in</a>
+                        <a href="index.html" data-role="button" data-icon="myicong" data-iconpos="notext">g</a>
+                        <p align="center">&copy; 2016 <a style="text-decoration:none;" href="http://www.cphbusiness.dk/" target="new">CPH Business</a>. All rights reserved.</p>
+                        </div>
+
+                      </div>
+                       </div>
+                    </div>
+                </div> <!-- END FOOD 2 -->
+                
+                
+        <!-- FOOD 3 - SPISEHUSET -->
+                <div data-role="page" id="spisehuset">
+                        <div data-role="panel" id="overlayPane33" data-display="overlay" data-theme="b">
+                                  <ul data-role="listview">
+                                    <li data-role="list-divider">MENU</li>
+                                        <li><a href="#home" data-transition="slide">Home</a></li>
+                                        <li><a href="#food" data-transition="slide">Food</a></li>
+                                        <li><a href="#art" data-transition="slide">Art</a></li>
+                                        <li><a href="#nlife" data-transition="slide">Nightlife</a></li>
+                                        <li><a href="#social" data-transition="slide">Social</a></li>
+                                        <li><a href="#vintage" data-transition="slide">Vintage</a></li>
+                                        <li data-role="list-divider"></li>
+                                     <li data-icon="delete" data-rel="close"><a href="#" data-transition="slide">CLOSE</a></li>
+                                 </ul><!-- panel content ends here -->
+                            </div><!-- /panel -->
+
+                          <div data-role="header" data-theme="b" data-position="fixed">
+                               <a href="#overlayPane33" data-transition="slide" class="ui-btn ui-corner-all ui-icon-bars ui-shadow-icon ui-btn-icon-notext">Menu</a>
+                                <h1>URBAN EXPLORER</h1>
+                                <a href="#home" data-transition="slide" data-role="button" data-icon="myiconh" data-iconpos="notext">www</a>
+                          </div>
+
+                        <div id="spisehuset" data-role="main" data-add-back-btn="true">
+                            <div data-role="content">
+                                <div data-role="header">
+                                    <img width="100%" src="https://politiken.dk/ibyen/Image/Show/0b300541-5e67-440a-932c-a25200e871d3?width=940&height=515" alt="res bror photo"/>
+                                    <h1 style="text-align:center;">Spisehuset Rub og Stub</h1>
+                                </div> 
+                                    <div id="description">
+                                            <p style="text-align: center;">Spisehuset Rub and Stub is on the 1st floor of house-KBH in one of Copenhagen's oldest buildings. In the old cowshed they serve good food based on surplus products. They cook for various events, workshops, private dinners and the like so it's highly likely to see an event going on inside.</p>
+                                    </div>
+                                    <div data-role="controlgroup" data-type="vertical">
+                                            <a style="padding:15px;" href="https://spisrubogstub.dk/?page_id=17" rel="external" data-role="button" data-role="button" data-icon="myiconwww" > Website</a>
+                                            <a style="padding:15px;" href="https://www.facebook.com/spisrubogstub/?fref=ts" rel="external" data-role="button" data-icon="myiconfb">Facebook page</a>
+                                </div>
+
+
+                                    <div id="location" style="text-align:center;">	
+                                            <h3>Location</h3>
+                                            <hr style="width:10%;">
+                                            <p>Rådhusstræde 13</p>
+                                            <p>1466 København</p>	
+                                            <div id="contact_buttons">	
+
+                                            <a href="https://www.google.dk/maps/place/Spisehuset+Rub+%26+Stub/@55.6764403,12.5729326,17z/data=!3m1!4b1!4m5!3m4!1s0x465253117b373ba7:0x1a13b74eef5e04c7!8m2!3d55.6764373!4d12.5751213"><img  src="img/spisehuset_map.jpg" alt="map" width="100%" a>	
+                                            <a href="https://www.google.dk/search?q=spisehuset+rub+%26+stub&oq=spi&aqs=chrome.0.69i59l3j69i60j69i57j0.2014j0j4&sourceid=chrome&ie=UTF-8#lrd=0x465253117b373ba7:0x1a13b74eef5e04c7,1,"   data-rel="popup" data-role="button" data-icon="tel">Google reviews </a>	
+                                            </div>
+                                        </div>
+
+
+
+                                 <div data-role="footer" data-theme="b" data-position="fixed">
+                                <div align="center" style="padding: 1%;">
+                                <a href="index.html" data-role="button" data-icon="myiconwp" data-iconpos="notext">www</a>
+                                <a href="index.html" data-role="button" data-icon="myiconfb" data-iconpos="notext">fb</a>
+                                <a href="index.html" data-role="button" data-icon="myiconin" data-iconpos="notext">in</a>
+                                <a href="index.html" data-role="button" data-icon="myicong" data-iconpos="notext">g</a>
+                                <p align="center">&copy; 2016 <a style="text-decoration:none;" href="http://www.cphbusiness.dk/" target="new">CPH Business</a>. All rights reserved.</p>
+                                </div>
+
+                              </div>
+                               </div>
+                            </div>
+                </div> <!-- END FOOD 3 -->
+                    
+            <!-- FOOD 4 - MORGENSTEDET -->
+                <div data-role="page" id="morgen">
+                        <div data-role="panel" id="overlayPane34" data-display="overlay" data-theme="b">
+                                  <ul data-role="listview">
+                                    <li data-role="list-divider">MENU</li>
+                                        <li><a href="#home" data-transition="slide">Home</a></li>
+                                        <li><a href="#food" data-transition="slide">Food</a></li>
+                                        <li><a href="#art" data-transition="slide">Art</a></li>
+                                        <li><a href="#nlife" data-transition="slide">Nightlife</a></li>
+                                        <li><a href="#social" data-transition="slide">Social</a></li>
+                                        <li><a href="#vintage" data-transition="slide">Vintage</a></li>
+                                        <li data-role="list-divider"></li>
+                                     <li data-icon="delete" data-rel="close"><a href="#" data-transition="slide">CLOSE</a></li>
+                                 </ul><!-- panel content ends here -->
+                            </div><!-- /panel -->
+
+                          <div data-role="header" data-theme="b" data-position="fixed">
+                               <a href="#overlayPane34" data-transition="slide" class="ui-btn ui-corner-all ui-icon-bars ui-shadow-icon ui-btn-icon-notext">Menu</a>
+                                <h1>URBAN EXPLORER</h1>
+                                <a href="#home" data-transition="slide" data-role="button" data-icon="myiconh" data-iconpos="notext">www</a>
+                          </div>
+
+                        <div id="morgen" data-role="main" data-add-back-btn="true">
+                            <div data-role="content">
+                                <div data-role="header">
+                                    <img width="100%" src="https://scontent-frt3-1.xx.fbcdn.net/t31.0-8/12045425_510385972462285_3266658297374929737_o.jpg" alt="res bror photo"/>
+                                    <h1 style="text-align:center;">Morgestedet, Christianshavn</h1>
+                                </div> 
+                                    <div id="description">
+                                            <p style="text-align: center;">Morgenstedet is a vegetarian dining club which has existed for more than 25 years. It's known for its tasty, healthy and well-balanced organic food, both for Christiania's residents and the many visitors who visit the free city every year. The high quality of organic vegetarian food corresponds to Danish vegetarian traditions and the environment.</p>
+                                    </div>
+                                    <div data-role="controlgroup" data-type="vertical">
+                                            <a style="padding:15px;" href="http://morgenstedet.dk/" rel="external" data-role="button" data-role="button" data-icon="myiconwww" > Website</a>
+                                            <a style="padding:15px;" href="https://www.facebook.com/pages/Morgenstedet/206147839414013?fref=ts" rel="external" data-role="button" data-icon="myiconfb">Facebook page</a>
+                                </div>
+
+
+                                    <div id="location" style="text-align:center;">	
+                                            <h3>Location</h3>
+                                            <hr style="width:10%;">
+                                            <p>Fabriksområdet 134</p>
+                                            <p>1440 København K</p>	
+                                            <div id="contact_buttons">	
+
+                                            <a href="https://www.google.dk/maps/place/Morgenstedet/@55.6734324,12.6023296,17z/data=!4m5!3m4!1s0x46525330babd16e7:0xcc90b1191f578703!8m2!3d55.6737379!4d12.6030377"><img  src="img/morgenstedet_map.jpg" alt="map" width="100%" a>	
+                                            <a href="https://www.google.dk/search?q=morgenstedet+copenhagen&biw=1536&bih=735&source=lnms&sa=X&ved=0ahUKEwiC0f-U5vrPAhXiYpoKHfBkCMQQ_AUIBygA&dpr=1.25#lrd=0x46525330babd16e7:0xcc90b1191f578703,1,"   data-rel="popup" data-role="button" data-icon="tel">Google reviews </a>	
+                                            </div>
+                                        </div>
+
+
+
+                                 <div data-role="footer" data-theme="b" data-position="fixed">
+                                <div align="center" style="padding: 1%;">
+                                <a href="index.html" data-role="button" data-icon="myiconwp" data-iconpos="notext">www</a>
+                                <a href="index.html" data-role="button" data-icon="myiconfb" data-iconpos="notext">fb</a>
+                                <a href="index.html" data-role="button" data-icon="myiconin" data-iconpos="notext">in</a>
+                                <a href="index.html" data-role="button" data-icon="myicong" data-iconpos="notext">g</a>
+                                <p align="center">&copy; 2016 <a style="text-decoration:none;" href="http://www.cphbusiness.dk/" target="new">CPH Business</a>. All rights reserved.</p>
+                                </div>
+
+                              </div>
+                               </div>
+                            </div>
+                </div> <!-- END FOOD 4 -->
+
+   <!-- FOOD 5 - PALUDAN -->
+                <div data-role="page" id="paludan">
+                        <div data-role="panel" id="overlayPane35" data-display="overlay" data-theme="b">
+                                  <ul data-role="listview">
+                                    <li data-role="list-divider">MENU</li>
+                                        <li><a href="#home" data-transition="slide">Home</a></li>
+                                        <li><a href="#food" data-transition="slide">Food</a></li>
+                                        <li><a href="#art" data-transition="slide">Art</a></li>
+                                        <li><a href="#nlife" data-transition="slide">Nightlife</a></li>
+                                        <li><a href="#social" data-transition="slide">Social</a></li>
+                                        <li><a href="#vintage" data-transition="slide">Vintage</a></li>
+                                        <li data-role="list-divider"></li>
+                                     <li data-icon="delete" data-rel="close"><a href="#" data-transition="slide">CLOSE</a></li>
+                                 </ul><!-- panel content ends here -->
+                            </div><!-- /panel -->
+
+                          <div data-role="header" data-theme="b" data-position="fixed">
+                               <a href="#overlayPane35" data-transition="slide" class="ui-btn ui-corner-all ui-icon-bars ui-shadow-icon ui-btn-icon-notext">Menu</a>
+                                <h1>URBAN EXPLORER</h1>
+                                <a href="#home" data-transition="slide" data-role="button" data-icon="myiconh" data-iconpos="notext">www</a>
+                          </div>
+
+                        <div id="paludan" data-role="main" data-add-back-btn="true">
+                            <div data-role="content">
+                                <div data-role="header">
+                                    <img width="100%" src="http://media.giornaledellalibreria.it/galleria_immagini/copenaghen-tra-librerie-caffa-letterari-biblioteche-reali-e-diamanti-neri/large/Paludan%201.jpg" alt="res bror photo"/>
+                                    <h1 style="text-align:center;">Paludan Book and Cafe</h1>
+                                </div> 
+                                    <div id="description">
+                                            <p style="text-align: center;">Paludan Book and Café is a shop with many traditions and stories. The café's clear objective is to combine the traditional bookstore with a functioning eatery, where service is top notch in both places. You can notice the vibrant environment where there is space for contemplation and inspiration in all kinds of literature, the best services to both drinkers and diners. </p>
+                                    </div>
+                                    <div data-role="controlgroup" data-type="vertical">
+                                            <a style="padding:15px;" href="http://www.paludan-cafe.dk/" rel="external" data-role="button" data-role="button" data-icon="myiconwww" > Website</a>
+                                            <a style="padding:15px;" href="https://www.facebook.com/pages/Paludan-Bogcaf%C3%A9/181068765248090?fref=ts" rel="external" data-role="button" data-icon="myiconfb">Facebook page</a>
+                                </div>
+
+
+                                    <div id="location" style="text-align:center;">	
+                                            <h3>Location</h3>
+                                            <hr style="width:10%;">
+                                            <p>Fiolstræde 12</p>
+                                            <p>1171 København</p>	
+                                            <div id="contact_buttons">	
+
+                                            <a href="https://www.google.dk/maps/place/Morgenstedet/@55.6734324,12.6023296,17z/data=!4m5!3m4!1s0x46525330babd16e7:0xcc90b1191f578703!8m2!3d55.6737379!4d12.6030377"><img  src="img/paludan_map.jpg" alt="map" width="100%" a>	
+                                            <a href="https://www.google.dk/search?q=paludan+bogcafe&biw=1536&bih=735&source=lnms&sa=X&ved=0ahUKEwiPgKi36_rPAhXF3iwKHSoMCH4Q_AUIBSgA&dpr=1.25#lrd=0x465253103fe19c97:0xdcf4e0b8fae25688,1,"   data-rel="popup" data-role="button" data-icon="tel">Google reviews </a>	
+                                            </div>
+                                        </div>
+
+
+
+                                 <div data-role="footer" data-theme="b" data-position="fixed">
+                                <div align="center" style="padding: 1%;">
+                                <a href="index.html" data-role="button" data-icon="myiconwp" data-iconpos="notext">www</a>
+                                <a href="index.html" data-role="button" data-icon="myiconfb" data-iconpos="notext">fb</a>
+                                <a href="index.html" data-role="button" data-icon="myiconin" data-iconpos="notext">in</a>
+                                <a href="index.html" data-role="button" data-icon="myicong" data-iconpos="notext">g</a>
+                                <p align="center">&copy; 2016 <a style="text-decoration:none;" href="http://www.cphbusiness.dk/" target="new">CPH Business</a>. All rights reserved.</p>
+                                </div>
+
+                              </div>
+                               </div>
+                            </div>
+                </div> <!-- END FOOD 5 -->
+
+   
+         
+       </body>
+</html>
